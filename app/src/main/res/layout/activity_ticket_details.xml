@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="baman.lankahomes.lk.zupportdeskticketsystem.TicketDetails"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:id="@+id/ticketDetailsHead"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/navigationBackground">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:id="@+id/IV_td_priority_bar"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/big_icon_low_priority"
+            android:layout_marginLeft="-8dp"
+            android:background="@color/colorWhite" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/IV_td_leftarrow_bar"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/IV_td_priority_bar"
+            android:layout_toEndOf="@+id/IV_td_priority_bar"
+            android:src="@drawable/td_left_arrow"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/tv_TD_ticket_id"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/IV_td_leftarrow_bar"
+            android:layout_toEndOf="@+id/IV_td_leftarrow_bar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:textStyle="bold"
+            android:text="ticket id"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:id="@+id/IV_td_edit_ticket"
+            android:src="@drawable/td_edit_icon"
+            android:layout_alignBottom="@+id/tv_TD_ticket_id"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/tv_td_open_status"
+            android:layout_below="@+id/IV_td_leftarrow_bar"
+            android:layout_toRightOf="@+id/IV_td_priority_bar"
+            android:layout_toEndOf="@+id/IV_td_priority_bar"
+            android:layout_margin="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/tv_td_overdue"
+            android:layout_alignTop="@+id/tv_td_open_status"
+            android:layout_toRightOf="@+id/tv_td_open_status"
+            android:layout_toEndOf="@+id/tv_td_open_status"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/tv_td_subject"
+            android:layout_below="@+id/tv_td_overdue"
+            android:layout_toRightOf="@+id/IV_td_priority_bar"
+            android:layout_toEndOf="@+id/IV_td_priority_bar"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/colorBlack" />
+
+    </RelativeLayout>
+    <!-- include Shadow below appbar -->
+    <View android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/ticketDetailsHead"
+        android:background="@drawable/toolbar_dropshadow"
+        android:id="@+id/view_border" />
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_border">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view_tickets_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scrollbars="none" />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

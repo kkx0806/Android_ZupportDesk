@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rv_custom_tkt_dtls"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/colorWhite">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/IV_tfd_avatar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/icone_avatar2"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@+id/TV_tfd_message_date"
+        android:layout_alignTop="@+id/TV_tfd_reported_date"
+        android:layout_marginTop="-10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Small Text"
+        android:id="@+id/TV_tfd_name"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/IV_tfd_avatar"
+        android:layout_toEndOf="@+id/IV_tfd_avatar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textSize="16dp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/TV_tfd_reported_date"
+        android:layout_below="@+id/TV_tfd_name"
+        android:layout_toRightOf="@+id/IV_tfd_avatar"
+        android:layout_toEndOf="@+id/IV_tfd_avatar"
+        android:layout_marginLeft="5dp"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/TV_tfd_hide_show"
+        android:layout_below="@+id/TV_tfd_reported_date"
+        android:layout_toRightOf="@+id/IV_tfd_avatar"
+        android:layout_toEndOf="@+id/IV_tfd_avatar"
+        android:layout_marginLeft="5dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/TV_tfd_cc_address"
+        android:layout_below="@+id/TV_tfd_hide_show"
+        android:layout_toRightOf="@+id/IV_tfd_avatar"
+        android:layout_toEndOf="@+id/IV_tfd_avatar"
+        android:layout_marginLeft="5dp"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/TV_tfd_message_date"
+        android:layout_below="@+id/TV_tfd_cc_address"
+        android:layout_toRightOf="@+id/IV_tfd_avatar"
+        android:layout_toEndOf="@+id/IV_tfd_avatar"
+        android:layout_marginLeft="5dp"
+        android:textSize="12dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/TV_tfd_message"
+        android:textSize="16dp"
+        android:layout_below="@+id/TV_tfd_message_date"
+        android:layout_alignLeft="@+id/IV_tfd_avatar"
+        android:layout_alignStart="@+id/IV_tfd_avatar"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textStyle="normal" />
+</RelativeLayout>

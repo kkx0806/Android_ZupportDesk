@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F4522C</color>
+    <color name="colorPrimaryDark">#f44336</color>
+    <color name="colorAccent">#f44336</color>
+
+    <color name="editText_bg">#F0F0F0</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorHeader">#DFDFDF</color>
+    <color name="colorHeaderBorder">#f0f1f1</color>
+    <color name="colorHeaderText">#7D7D7D</color>
+    <color name="navigationBackground">#F5F5F5</color>
+    <color name="nav_text_color">#424242</color>
+
+</resources>

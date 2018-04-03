@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:fitsSystemWindows="true"
+tools:context="baman.lankahomes.lk.zupportdeskticketsystem.PickupActivity">
+
+        <include
+            android:id="@+id/app_bar_dashboard"
+            layout="@layout/app_bar_dashboard" />
+
+
+    <!-- include Shadow below appbar -->
+    <View android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/toolbar_dropshadow"/>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+        <RelativeLayout
+            android:id="@+id/relativemain_main"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <include layout="@layout/activity_pickup_content" />
+        </RelativeLayout>
+
+
+
+        <fragment
+            android:id="@+id/fragment_navigation_drawer"
+            android:layout_width="@dimen/navdrawer_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout = "@layout/fragment_navigation_drawer"
+            android:name="baman.lankahomes.lk.zupportdeskticketsystem.Data.navigationDrawerFragment"
+            tools:layout="@layout/fragment_navigation_drawer" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/menu_red"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        fab:menu_labels_ellipsize="end"
+        fab:menu_labels_singleLine="true"
+        fab:menu_backgroundColor="#ccffffff">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/pickup_pickup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fab_icon_pickup"
+            fab:fab_size="mini"
+            fab:fab_label="Pickup tickets" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/pickup_assignto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fab_icon_assign_to"
+            fab:fab_size="mini"
+            fab:fab_label="Assign to agent" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/pickup_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fab_icon_close"
+            fab:fab_size="mini"
+            fab:fab_label="Close tickets" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/pickup_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fab_icon_delete"
+            fab:fab_size="mini"
+            fab:fab_label="Delete tickets" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</android.support.design.widget.CoordinatorLayout>

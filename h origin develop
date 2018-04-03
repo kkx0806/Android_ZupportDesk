@@ -1,0 +1,131 @@
+[33mcommit 7d56b0fadd960cfb03ae5d0b0a9b2f050eeeab29[m
+Author: kanasalingam sathyabaman <kanasalingam sathyabaman>
+Date:   Tue Aug 16 06:35:07 2016 +0530
+
+    Settings Activity create
+
+[33mcommit dcfe77d906d3c586559f4c964a7e92a14c959ef6[m
+Author: kanasalingam sathyabaman <kanasalingam sathyabaman>
+Date:   Mon Aug 15 19:18:35 2016 +0530
+
+    Spellings and few modification mayans recomandations
+
+[33mcommit 4b253c830af5a33b08739ccce2b0e417d45ced01[m
+Author: kanasalingam sathyabaman <kanasalingam sathyabaman>
+Date:   Mon Aug 15 17:24:28 2016 +0530
+
+    ticket Details - floating icons with test done
+
+[33mcommit 74687f651807dcc021dd05ebf35888034df0334e[m
+Author: kanasalingam sathyabaman <kanasalingam sathyabaman>
+Date:   Mon Aug 15 15:48:44 2016 +0530
+
+    Pickup - Floating icon with text done
+
+[33mcommit 0fd03c81472ccec7d95b318552837dc644071b28[m
+Author: kanasalingam sathyabaman <kanasalingam sathyabaman>
+Date:   Mon Aug 15 10:01:22 2016 +0530
+
+    Pick up icons changed
+
+[33mcommit 569ee6727380a3b8a86260f105503aa8d127f825[m
+Author: kanasalingam sathyabaman <kanasalingam sathyabaman>
+Date:   Sat Aug 13 15:12:32 2016 +0530
+
+    Ticket pickup - Assignto - close and delete ticket fully done
+
+[33mcommit f657c7a4d45ab9410255a2482cae82a12c5d5293[m
+Author: kanasalingam sathyabaman <kanasalingam sathyabaman>
+Date:   Fri Aug 12 19:23:34 2016 +0530
+
+    Recycler view with check box created
+
+[33mcommit 579175a47075ec761bf0e9c99729392057edc717[m
+Author: kanasalingam sathyabaman <kanasalingam sathyabaman>
+Date:   Fri Aug 12 17:23:56 2016 +0530
+
+    PickupActivity - checkbox in recycler view created
+
+[33mcommit 7da7a4dec058bd11e5a2e0fbb4981b421070ab97[m
+Author: kanasalingam sathyabaman <kanasalingam sathyabaman>
+Date:   Fri Aug 12 15:24:39 2016 +0530
+
+    pickup ticket - before test
+
+[33mcommit 792893c220c144757be3ef2a8e6267ccc172d706[m
+Author: kanasalingam sathyabaman <kanasalingam sathyabaman>
+Date:   Fri Aug 12 04:49:18 2016 +0530
+
+    before selectable recycler view
+
+[33mcommit aa234d33098288b4d232cc5b3f3bb87dcddb3aa5[m
+Author: kanasalingam sathyabaman <kanasalingam sathyabaman>
+Date:   Thu Aug 11 13:08:16 2016 +0530
+
+    Spelling correction - Mayan Recommendation
+
+[33mcommit 3e2540e90808ae23cc2f3cbc2b8577c621eb7b10[m
+Author: kanasalingam sathyabaman <kanasalingam sathyabaman>
+Date:   Wed Aug 10 16:05:59 2016 +0530
+
+    Live version 1.6.16.8.10
+
+[33mcommit 49a9054efacabb45f29821bcab69b1c0fa64f31a[m
+Author: kanasalingam sathyabaman <kanasalingam sathyabaman>
+Date:   Wed Aug 10 11:07:05 2016 +0530
+
+    X509TrustManager - SSL certificate validation and exception added
+
+[33mcommit c96b16096474bbafa2bba88f74e342c3fd350a4b[m
+Author: kanasalingam sathyabaman <kanasalingam sathyabaman>
+Date:   Tue Aug 9 19:08:41 2016 +0530
+
+    1st build success
+
+[33mcommit e30cd964225b7cb718803383243ca7c25fc92efb[m
+Author: kanasalingam sathyabaman <kanasalingam sathyabaman>
+Date:   Mon Aug 8 19:10:27 2016 +0530
+
+    icons modified
+
+[33mcommit a2fcb2d5611864c3490ca4bff312d58b66df240f[m
+Author: kanasalingam sathyabaman <kanasalingam sathyabaman>
+Date:   Mon Aug 8 15:36:55 2016 +0530
+
+    ticket details - dropdown menu - design created
+
+[33mcommit b31b0d05934164100250781880485ba30e66f80a[m
+Author: kanasalingam sathyabaman <kanasalingam sathyabaman>
+Date:   Mon Aug 8 12:36:56 2016 +0530
+
+    cleaning work done
+
+[33mcommit 1c934be759c1f2e4f3184c0a47c7c04c30f304a4[m
+Author: kanasalingam sathyabaman <kanasalingam sathyabaman>
+Date:   Mon Aug 8 10:14:06 2016 +0530
+
+    manifest orientation changes made
+
+[33mcommit 7ab3e9dc5d23550907cba301a3a4fe8fdd2a593f[m
+Author: kanasalingam sathyabaman <kanasalingam sathyabaman>
+Date:   Fri Aug 5 18:28:22 2016 +0530
+
+    navigation drawer - sample icons added
+
+[33mcommit 3ec89d4575478d9ab8bb41564a9380d6b919ca27[m
+Author: kanasalingam sathyabaman <kanasalingam sathyabaman>
+Date:   Fri Aug 5 18:10:15 2016 +0530
+
+    before aravind design
+
+[33mcommit 5630bd0986c3727c948bcd6bf61cb1bd990f290c[m
+Author: kanasalingam sathyabaman <kanasalingam sathyabaman>
+Date:   Fri Aug 5 12:49:17 2016 +0530
+
+    Ticket history - created andreplied date modified
+
+[33mcommit 352beecc5d8cc38ebf75eaaabe57391b80687d72[m
+Author: kanasalingam sathyabaman <kanasalingam sathyabaman>
+Date:   Fri Aug 5 11:23:14 2016 +0530
+
+    initial commit

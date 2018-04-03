@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="6dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical"
+    tools:context="baman.lankahomes.lk.zupportdeskticketsystem.PickupActivityFragment"
+    tools:showIn="@layout/activity_pickup">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/pickup_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:scrollbars="vertical" />
+
+
+
+
+</LinearLayout>
+

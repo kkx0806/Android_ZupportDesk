@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Zupport Desk</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="pass_forgot">A password recovery link will be sent to your email.</string>
+    <string name="company_profile">Select your company profile here.</string>
+    <string name="submit">Submit</string>
+    <string name="signup">Sign up</string>
+    <string name="forgotpass">Forgot Password</string>
+    <string name="company_name">Company Name</string>
+    <string name="help_desk_name">Help Desk Name</string>
+    <string name="your_company_profile">Your Company Profile</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="new_ticket">New Ticket</string>
+    <string name="notification">Notifications</string>
+    <string name="no_notification">Sorry, you don\'t have any notifications to display!</string>
+    <string name="ticket_noti">Ticket Notifications</string>
+    <string name="version_no">Version 1.12.16.8.19</string>
+
+
+    <!--This is just for easy login - Delete when goes to production -->
+    <string name="temp_email">sathyabaman@isaithuli.com</string>
+    <string name="temp_pass">Admin123</string>
+    <!-- *********************************************************** -->
+
+    <string-array name="priorityArray">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+        <item>Urgent</item>
+    </string-array>
+
+    <string-array name="statusArray">
+        <item>Open</item>
+        <item>On Hold</item>
+    </string-array>
+</resources>

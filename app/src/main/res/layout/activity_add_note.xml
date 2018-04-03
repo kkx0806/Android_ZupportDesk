@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="baman.lankahomes.lk.zupportdeskticketsystem.TicketDetails"
+    android:background="@color/colorWhite">
+
+
+    <RelativeLayout
+        android:id="@+id/tkt_response_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/IV_tkt_replay_back_arrow"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/td_left_arrow"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/TV_tkt_replay_header_title"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="28dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/IV_tkt_replay_back_arrow"
+            android:layout_toEndOf="@+id/IV_tkt_replay_back_arrow" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/imageView3"
+            android:src="@drawable/icon_three_dots"
+            android:layout_alignBottom="@+id/IV_tkt_replay_back_arrow"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/IV_send_response2"
+            android:src="@drawable/icon_send_message"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView3"
+            android:layout_toStartOf="@+id/imageView3"
+            android:layout_marginRight="38dp"
+            android:layout_marginEnd="38dp" />
+    </RelativeLayout>
+
+    <!-- include Shadow below appbar -->
+    <View android:layout_width="match_parent"
+        android:layout_below="@+id/tkt_response_top_bar"
+        android:layout_height="5dp"
+        android:background="@drawable/toolbar_dropshadow"
+        android:id="@+id/view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="To"
+        android:id="@+id/TV_txt_replay_to"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="5dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Notify"
+        android:id="@+id/tv_note_notify"
+        android:layout_alignLeft="@+id/TV_txt_replay_to"
+        android:layout_alignStart="@+id/TV_txt_replay_to"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/view"
+        android:layout_marginLeft="5dp" />
+
+    <MultiAutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ET_tkt_replay_ccaddress"
+        android:layout_below="@+id/view"
+        android:layout_toRightOf="@+id/tv_note_notify"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp" />
+
+    <View android:layout_width="match_parent"
+        android:layout_below="@+id/ET_tkt_replay_ccaddress"
+        android:layout_height="1dp"
+        android:background="@drawable/toolbar_dropshadow"
+        android:layout_marginTop="5dp"
+        android:id="@+id/view4" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Visible to the customer"
+        android:id="@+id/textView9"
+        android:layout_alignTop="@+id/view4"
+        android:layout_alignLeft="@+id/tv_note_notify"
+        android:layout_alignStart="@+id/tv_note_notify"
+        android:layout_marginTop="15dp" />
+
+
+
+    <android.support.v7.widget.SwitchCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SW_note_visiblity"
+        android:theme="@style/SCBSwitch"
+        android:checked="false"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_toRightOf="@+id/textView9"
+        android:layout_toEndOf="@+id/textView9"
+        android:layout_alignParentRight="true" />
+
+    <View android:layout_width="match_parent"
+        android:layout_below="@+id/SW_note_visiblity"
+        android:layout_height="1dp"
+        android:background="@drawable/toolbar_dropshadow"
+        android:layout_marginTop="5dp"
+        android:id="@+id/view5" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ET_tkt_replay_message"
+        android:gravity="left|top"
+        android:layout_below="@+id/view5"
+        android:hint="Enter your private message here."
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp" />
+
+</RelativeLayout>

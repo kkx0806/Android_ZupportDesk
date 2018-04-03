@@ -1,0 +1,87 @@
+[1mdiff --git a/app/src/main/java/baman/lankahomes/lk/zupportdeskticketsystem/TicketDetails.java b/app/src/main/java/baman/lankahomes/lk/zupportdeskticketsystem/TicketDetails.java[m
+[1mindex ca9a338..514ac4c 100644[m
+[1m--- a/app/src/main/java/baman/lankahomes/lk/zupportdeskticketsystem/TicketDetails.java[m
+[1m+++ b/app/src/main/java/baman/lankahomes/lk/zupportdeskticketsystem/TicketDetails.java[m
+[36m@@ -9,15 +9,18 @@[m [mimport android.os.Bundle;[m
+ import android.support.design.widget.FloatingActionButton;[m
+ import android.support.v7.app.AppCompatActivity;[m
+ import android.support.v7.widget.LinearLayoutManager;[m
+[32m+[m[32mimport android.support.v7.widget.PopupMenu;[m
+ import android.support.v7.widget.RecyclerView;[m
+ import android.text.Html;[m
+ import android.text.format.DateFormat;[m
+ import android.util.Log;[m
+[32m+[m[32mimport android.view.MenuItem;[m
+ import android.view.View;[m
+ import android.view.animation.Animation;[m
+ import android.view.animation.AnimationUtils;[m
+ import android.widget.ImageView;[m
+ import android.widget.TextView;[m
+[32m+[m[32mimport android.widget.Toast;[m
+ [m
+ import org.apache.http.HttpEntity;[m
+ import org.apache.http.HttpResponse;[m
+[36m@@ -57,13 +60,14 @@[m [mimport baman.lankahomes.lk.zupportdeskticketsystem.Data.SimpleDividerItemDecorat[m
+ import baman.lankahomes.lk.zupportdeskticketsystem.Data.TicketDetailsItemObject;[m
+ import baman.lankahomes.lk.zupportdeskticketsystem.Data.TicketDetailsRecyclerViewAdapter;[m
+ [m
+[31m-public class TicketDetails extends AppCompatActivity implements View.OnClickListener{[m
+[32m+[m[32mpublic class TicketDetails extends AppCompatActivity implements View.OnClickListener, MenuItem.OnMenuItemClickListener{[m
+     ImageView priority_bar;[m
+     TextView tv_ticket_id;[m
+     ImageView back_arrow;[m
+     TextView ticket_status;[m
+     TextView ticket_overdue;[m
+     TextView ticket_subject;[m
+[32m+[m[32m    ImageView edit_button;[m
+ [m
+     public String sender_email;[m
+     public String mail_subject;[m
+[36m@@ -99,7 +103,7 @@[m [mpublic class TicketDetails extends AppCompatActivity implements View.OnClickList[m
+ [m
+         Intent intent = getIntent();[m
+         String ticket_id = intent.getStringExtra("ticket_id");[m
+[31m-[m
+[32m+[m[32m        edit_button = (ImageView) findViewById(R.id.IV_td_edit_ticket);[m
+         ticket_status = (TextView) findViewById(R.id.tv_td_open_status);[m
+         ticket_overdue = (TextView) findViewById(R.id.tv_td_overdue);[m
+         ticket_subject= (TextView) findViewById(R.id.tv_td_subject);[m
+[36m@@ -110,6 +114,7 @@[m [mpublic class TicketDetails extends AppCompatActivity implements View.OnClickList[m
+ [m
+         back_arrow = (ImageView) findViewById(R.id.IV_td_leftarrow_bar);[m
+         back_arrow.setOnClickListener(onClickListener);[m
+[32m+[m[32m        edit_button.setOnClickListener(onClickListener);[m
+ [m
+         /*********************** Floating Icon *****************************************************/[m
+         fab = (FloatingActionButton)findViewById(R.id.fab);[m
+[36m@@ -256,10 +261,30 @@[m [mpublic class TicketDetails extends AppCompatActivity implements View.OnClickList[m
+                     onBackPressed();[m
+                     Log.d("ticket details", "left arrow clicked");[m
+                     break;[m
+[32m+[m[32m                case R.id.IV_td_edit_ticket:[m
+[32m+[m[32m                    PopupMenu dropDownMenu = new PopupMenu(getApplicationContext(), edit_button);[m
+[32m+[m[32m                    dropDownMenu.getMenuInflater().inflate(R.menu.ticket_details_menu, dropDownMenu.getMenu());[m
+[32m+[m
+[32m+[m[32m                    dropDownMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {[m
+[32m+[m
+[32m+[m[32m                        @Override[m
+[32m+[m[32m                        public boolean onMenuItemClick(MenuItem menuItem) {[m
+[32m+[m[32m                            Toast.makeText(getApplicationContext(), "You have clicked " + menuItem.getTitle(), Toast.LENGTH_LONG).show();[m
+[32m+[m[32m                            return true;[m
+[32m+[m[32m                        }[m
+[32m+[m[32m                    });[m
+[32m+[m[32m                    dropDownMenu.show();[m
+[32m+[m
+             }[m
+[32m+[m
+         }[m
+     };[m
+ [m
+[32m+[m[32m    @Override[m
+[32m+[m[32m    public boolean onMenuItemClick(MenuItem menuItem) {[m
+[32m+[m[32m        return false;[m
+[32m+[m[32m    }[m
+[32m+[m
+     public HttpClient getNewHttpClient() {[m
+         try {[m
+             KeyStore trustStore = KeyStore.getInstance(KeyStore.getDefaultType());[m

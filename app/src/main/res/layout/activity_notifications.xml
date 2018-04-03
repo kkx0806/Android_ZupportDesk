@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/act_layou_notification"
+    tools:context="baman.lankahomes.lk.zupportdeskticketsystem.Notifications"
+    android:background="@color/colorWhite">
+
+    <!-- Include Appbar -->
+    <include
+        android:id="@+id/app_bar_dashboard"
+        layout="@layout/app_bar_dashboard" />
+
+    <!-- include Shadow below appbar -->
+    <View android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/toolbar_dropshadow"/>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:id="@+id/relativemain_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView2"
+                android:src="@drawable/icon_notification_big_bell"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="102dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/no_notification"
+                android:id="@+id/textView17"
+                android:layout_below="@+id/imageView2"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp" />
+        </RelativeLayout>
+
+
+
+        <fragment
+            android:id="@+id/fragment_navigation_drawer"
+            android:layout_width="@dimen/navdrawer_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:layout = "@layout/fragment_navigation_drawer"
+            android:name="baman.lankahomes.lk.zupportdeskticketsystem.Data.navigationDrawerFragment"
+            tools:layout="@layout/fragment_navigation_drawer" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
